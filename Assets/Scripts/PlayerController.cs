@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     public float raycastDistance;
     public Color raycastColour;
 
+    [Header("Raycast - Script References")]
+    public DialogueTrigger dialogueTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,12 +43,26 @@ public class PlayerController : MonoBehaviour
         Raycast();
     }
 
+    private void Update()
+    {
+       
+    }
+
     //Gets reference from Player Input script
     public void OnMove(InputAction.CallbackContext context)
     {
         moveAxis = context.ReadValue<Vector2>();
     }
 
+    public void Interactions()
+    {
+        //If the player is looking at an object with the dialogue trigger, do this.
+        if(dialogueTrigger != null)
+        {
+            dialogueTrigger.StartTextPopup();
+        }
+       
+    }
 
     public void Movement()
     {
@@ -69,6 +86,23 @@ public class PlayerController : MonoBehaviour
         //Checks a raycast for scripts with the If statement
         if (Physics.Raycast(rayCastingPoint.position, characterCollider.transform.forward, out hit, raycastDistance))
         {
+            //If the raycast hits an object with a dialogue trigger
+            if(hit.collider.GetComponent<DialogueTrigger>() != null)
+            {
+                dialogueTrigger = hit.collider.GetComponent<DialogueTrigger>();
+            }
+
+            //If the ray cast isn't hitting an object with a dialogue trigger, the variable is null
+            else
+            {
+                dialogueTrigger = null;
+            }
+        }
+
+        //If raycast hits nothing
+        else
+        {
+            dialogueTrigger = null;
         }
     }
 }
