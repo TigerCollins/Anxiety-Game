@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     private GameObject playerObject;
     [SerializeField]
     private CharacterController characterCollider;
+
     [Header("Movement")]
+    public bool canMove = false;
     [SerializeField]
     private float gravityForce;
     [SerializeField]
@@ -30,6 +32,15 @@ public class PlayerController : MonoBehaviour
     [Header("Raycast - Script References")]
     public DialogueTrigger dialogueTrigger;
 
+    [Header("Startup Sequence")]
+    public bool textMessageOver;
+    [SerializeField]
+    private bool playerMoved;
+    [SerializeField]
+    private float timeToMove;
+    [SerializeField]
+    private Transform startPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,12 +51,32 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
+
+        //This needs to be in fixed update for smoothness
+        MoveIntoHouse();
+    }
+
+    public void Update()
+    {
         Raycast();
     }
 
-    private void Update()
+
+    //Only controls player auto moving through doorway on start (after text messages)
+    public void MoveIntoHouse()
     {
-       
+        //When text messages are done, make player move through door
+        if (textMessageOver == true && playerMoved == false)
+        {
+            playerObject.transform.position = Vector3.MoveTowards(playerObject.transform.position, startPosition.transform.position, timeToMove * Time.deltaTime);
+
+            if (Vector3.Distance(playerObject.transform.position, startPosition.transform.position) < 0.001f)
+            {
+                //Player regains character control and character stops auto moving
+                canMove = true;
+                playerMoved = true;
+            }
+        }
     }
 
     //Gets reference from Player Input script
@@ -56,24 +87,34 @@ public class PlayerController : MonoBehaviour
 
     public void Interactions()
     {
-        //If the player is looking at an object with the dialogue trigger, do this.
-        if(dialogueTrigger != null)
+        if(canMove)
         {
-            dialogueTrigger.StartTextPopup();
+            //If the player is looking at an object with the dialogue trigger, do this.
+            if (dialogueTrigger != null)
+            {
+                dialogueTrigger.StartTextPopup();
+            }
+
         }
-       
+
     }
 
     public void Movement()
     {
-        //Sets gravity for player
+      
+
+        if (canMove)
+        { 
+              //Sets gravity for player
         moveVector = new Vector3(0, gravityForce * .2f * Time.deltaTime, 0);
         characterCollider.Move(moveVector);
 
-        //Sets up movement and it from OnMove function
-        float horizontal = moveAxis.x * movementMultiplier;
-        desiredMoveDirection = Vector3.ClampMagnitude(new Vector3(horizontal, 0, 0), maxMovementSpeed);
-        characterCollider.Move(desiredMoveDirection * Time.deltaTime * movementMultiplier);
+            //Sets up movement and it from OnMove function
+            float horizontal = moveAxis.x * movementMultiplier;
+            desiredMoveDirection = Vector3.ClampMagnitude(new Vector3(horizontal, 0, 0), maxMovementSpeed);
+            characterCollider.Move(desiredMoveDirection * Time.deltaTime * movementMultiplier);
+
+        }
 
     }
 
