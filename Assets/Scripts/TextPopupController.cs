@@ -6,6 +6,9 @@ namespace TextPopup
 {
     public class TextPopupController : MonoBehaviour
     {
+        [SerializeField]
+        private BlackBorder blackBorder;
+
         [TextArea(1,3)]
         public List<string> partyDialogue;
         public List<bool> partyDialogueTriggered;
@@ -23,6 +26,9 @@ namespace TextPopup
         [SerializeField]
         private List<Transform> spawnpoint;
 
+        [Header("Spawnpoint Variables")]
+        public int peopleSpokenTo;
+
 
         public void SpawnText()
         {
@@ -37,6 +43,10 @@ namespace TextPopup
                 //Chooses a spawnpoint from the list and instantiates the text prefab.
                 int randomSpawn = Random.Range(0, spawnpoint.Count);
                 Instantiate(textPrefab, spawnpoint[randomSpawn]);
+
+                //Update the total amount of people spoken to
+                peopleSpokenTo++;
+                blackBorder.UpdatePeopleSpokenTo();
             }
             //Records how many times the input for this function was triggered
             debugTimesTriggered++;

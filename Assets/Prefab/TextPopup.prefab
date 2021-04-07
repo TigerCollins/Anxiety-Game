@@ -86,7 +86,7 @@ TextMesh:
   m_Text: 'Hdey i dont know what to say '
   m_OffsetZ: 1.84
   m_CharacterSize: 1
-  m_LineSpacing: 2.49
+  m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4.44
