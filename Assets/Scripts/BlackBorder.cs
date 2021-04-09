@@ -8,19 +8,37 @@ public class BlackBorder : MonoBehaviour
     [SerializeField]
     private TextPopupController textPopupController;
     public GameObject blackBorderObject;
+    [SerializeField]
+    private GameObject cameraBlock;
+    
 
-    [Header("Size settings")]
+    [Header("Size Settings")]
     [SerializeField]
     private int peopleSpokenTo;
     [SerializeField]
-    private Vector3[] borderPositions;
+    private CanvasGroup[] blackBorderCanvasGroup;
     [SerializeField]
-    private Vector3[] borderScales;
+    private CanvasGroup redCanvasGroup;
+
+    [Header("Shake Settings")]
+    [SerializeField]
+    private float timeBeforeShakeStart;
+    [SerializeField]
+    private TraumaInducer traumaInducer;
+    [SerializeField]
+    private float shakeTime;
+    [SerializeField]
+    private float shakeStrength;
+
+
+    [Header("Timing Settings")]
+    [SerializeField]
+    private float redFlashTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        ChangeBorderSizing();
+        //ChangeBorderSizing();
     }
 
     // Update is called once per frame
@@ -37,16 +55,31 @@ public class BlackBorder : MonoBehaviour
 
     public void ChangeBorderSizing()
     {
-        if(borderPositions!=null)
-        {
-            blackBorderObject.transform.position = borderPositions[peopleSpokenTo];
+        StartCoroutine("BlackBorderTransition");
 
+
+    }
+
+    IEnumerator BlackBorderTransition()
+    {
+       
+        redCanvasGroup.alpha = 1;
+        cameraBlock.SetActive(true);
+        yield return new WaitForSeconds(redFlashTime);
+        cameraBlock.SetActive(false);
+        redCanvasGroup.alpha = 0;
+        yield return new WaitForSeconds(timeBeforeShakeStart);
+        StartCoroutine(traumaInducer.Start());
+
+        //If everyones been spoken to
+        if(peopleSpokenTo > blackBorderCanvasGroup.Length)
+        {
+            blackBorderCanvasGroup[peopleSpokenTo].alpha = 1;
+
+            blackBorderCanvasGroup[peopleSpokenTo - 1].alpha = 0;
         }
 
-        if(borderScales !=null)
-        {
-            blackBorderObject.transform.localScale = borderScales[peopleSpokenTo];
-        }
-
+       
+       
     }
 }
