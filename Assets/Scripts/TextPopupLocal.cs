@@ -9,12 +9,15 @@ public class TextPopupLocal : MonoBehaviour
     [SerializeField]
     private TextPopupController textPopupController;
     [SerializeField]
+    private PlayerController playerController;
+    [SerializeField]
     private int targetStringID;
     [SerializeField]
     private TextMesh textObject;
     [SerializeField]
     private float elapsedTime;
     private bool hasTriggered;
+    [SerializeField]
     private Color tempColour;
   
 
@@ -25,6 +28,7 @@ public class TextPopupLocal : MonoBehaviour
 
         //Finds the text controller via FindObject - better optimised than 'GameObject.Find'
         textPopupController = FindObjectOfType<TextPopupController>();
+        playerController = FindObjectOfType<PlayerController>();
 
         //Sets the text colour to be invisible
         tempColour.a = 0;
@@ -38,7 +42,7 @@ public class TextPopupLocal : MonoBehaviour
     public void GenerateNewStringID()
     {
         //Generates an ID for which string to pull from in a list
-        targetStringID = Random.Range(0, textPopupController.partyDialogue.Count);
+        targetStringID = playerController.dialogueTrigger.dialogueID;
     }
 
     public void UpdateString()

@@ -8,7 +8,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject playerObject;
     [SerializeField]
+    private GameObject playerHolder;
+    [SerializeField]
     private CharacterController characterCollider;
+
 
     [Header("Movement")]
     public bool canMove = false;
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private float maxMovementSpeed = 1;
 
     [Header("Raycast")]
+    public GameObject raycastObject;
     public Transform rayCastingPoint;
     public float raycastDistance;
     public Color raycastColour;
@@ -41,12 +45,30 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Transform startPosition;
 
+    [Header("Direction Variables")]
+    [SerializeField]
+    private float lastMoveAxis;
+
+
     // Start is called before the first frame update
     void Start()
     {
 
     }
 
+    public void TouchMovement(float movementWeighting)   
+    {
+  moveAxis = new Vector2(movementWeighting, 0);
+        lastMoveAxis = moveAxis.x;
+
+
+    }
+
+    public void CancelTouchMovement()
+    {
+        moveAxis = new Vector2(0, 0);
+
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -59,6 +81,20 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         Raycast();
+       
+    }
+
+    public void ChangeFacingDirection()
+    {
+ //If there is horizontal input 
+        if(moveAxis.x!=0)
+        {
+            Vector3 movementDirection = new Vector3(0, 0, moveAxis.x);
+
+            playerHolder.transform.rotation = Quaternion.LookRotation(movementDirection);
+        }
+
+       
     }
 
 
@@ -83,16 +119,20 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveAxis = context.ReadValue<Vector2>();
+        if(moveAxis.x != 0)
+        {
+            lastMoveAxis = moveAxis.x;
+        }
     }
 
-    public void Interactions()
+    public void Interactions(bool mouseUsed)
     {
         if(canMove)
         {
             //If the player is looking at an object with the dialogue trigger, do this.
             if (dialogueTrigger != null)
             {
-                dialogueTrigger.StartTextPopup();
+                dialogueTrigger.StartTextPopup(mouseUsed);
             }
 
         }
@@ -122,10 +162,10 @@ public class PlayerController : MonoBehaviour
     {
         // The raycast
         RaycastHit hit;
-        Debug.DrawRay(rayCastingPoint.position, characterCollider.transform.forward * raycastDistance, raycastColour, Time.deltaTime);
+        Debug.DrawRay(rayCastingPoint.position, rayCastingPoint.transform.forward * raycastDistance, raycastColour, Time.deltaTime);
 
         //Checks a raycast for scripts with the If statement
-        if (Physics.Raycast(rayCastingPoint.position, characterCollider.transform.forward, out hit, raycastDistance))
+        if (Physics.Raycast(rayCastingPoint.position, rayCastingPoint.transform.forward, out hit, raycastDistance))
         {
             //If the raycast hits an object with a dialogue trigger
             if(hit.collider.GetComponent<DialogueTrigger>() != null)
