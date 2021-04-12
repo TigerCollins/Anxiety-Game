@@ -1,0 +1,1173 @@
+fileFormatVersion: 2
+guid: 18c94d1d04688f247b20dd9f130d2114
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5800857365186459268
+    second: freePilkAbstractScribble_0
+  - first:
+      213: -2408986470022229446
+    second: freePilkAbstractScribble_1
+  - first:
+      213: 2919078014182498380
+    second: freePilkAbstractScribble_2
+  - first:
+      213: 3354510438673768615
+    second: freePilkAbstractScribble_3
+  - first:
+      213: -6152049287358057190
+    second: freePilkAbstractScribble_4
+  - first:
+      213: -2912419028390747844
+    second: freePilkAbstractScribble_5
+  - first:
+      213: 5236952464331298129
+    second: freePilkAbstractScribble_6
+  - first:
+      213: -8423590175211061194
+    second: freePilkAbstractScribble_7
+  - first:
+      213: -4960160852365011255
+    second: freePilkAbstractScribble_8
+  - first:
+      213: -969632328477945233
+    second: freePilkAbstractScribble_9
+  - first:
+      213: -6605700346534546747
+    second: freePilkAbstractScribble_10
+  - first:
+      213: -4499593707803642672
+    second: freePilkAbstractScribble_11
+  - first:
+      213: -1606039782978166118
+    second: freePilkAbstractScribble_12
+  - first:
+      213: 7753370130267929658
+    second: freePilkAbstractScribble_13
+  - first:
+      213: 1619559959947163594
+    second: freePilkAbstractScribble_14
+  - first:
+      213: -1671946135365954584
+    second: freePilkAbstractScribble_15
+  - first:
+      213: -3597038791547193195
+    second: freePilkAbstractScribble_16
+  - first:
+      213: 597238878178637391
+    second: freePilkAbstractScribble_17
+  - first:
+      213: -2917027963042477280
+    second: freePilkAbstractScribble_18
+  - first:
+      213: 629117569785045684
+    second: freePilkAbstractScribble_19
+  - first:
+      213: 150978285007243485
+    second: freePilkAbstractScribble_24
+  - first:
+      213: 8353134100805513684
+    second: freePilkAbstractScribble_25
+  - first:
+      213: -4380337762551388954
+    second: freePilkAbstractScribble_26
+  - first:
+      213: 7097780244810848192
+    second: freePilkAbstractScribble_27
+  - first:
+      213: 4435844537537791096
+    second: freePilkAbstractScribble_28
+  - first:
+      213: -2587819971640463890
+    second: freePilkAbstractScribble_29
+  - first:
+      213: -5571678915215768184
+    second: freePilkAbstractScribble_30
+  - first:
+      213: 116555686396555940
+    second: freePilkAbstractScribble_31
+  - first:
+      213: -7116931803749219051
+    second: freePilkAbstractScribble_32
+  - first:
+      213: -6145703747019548011
+    second: freePilkAbstractScribble_33
+  - first:
+      213: -8410311939455284851
+    second: freePilkAbstractScribble_34
+  - first:
+      213: -2984588308438219575
+    second: freePilkAbstractScribble_35
+  - first:
+      213: 787278061010497768
+    second: freePilkAbstractScribble_39
+  - first:
+      213: 5382364828776084932
+    second: freePilkAbstractScribble_40
+  - first:
+      213: -2505733568993815549
+    second: freePilkAbstractScribble_42
+  - first:
+      213: -4905236864309345686
+    second: freePilkAbstractScribble_43
+  - first:
+      213: 1979729423439172154
+    second: freePilkAbstractScribble_44
+  - first:
+      213: 3809993676639948362
+    second: freePilkAbstractScribble_45
+  - first:
+      213: 9016545986250691794
+    second: freePilkAbstractScribble_46
+  - first:
+      213: 8271889912513414475
+    second: freePilkAbstractScribble_47
+  - first:
+      213: -7798674736152212598
+    second: freePilkAbstractScribble_51
+  - first:
+      213: 5306308816238697991
+    second: freePilkAbstractScribble_52
+  - first:
+      213: -2464609734997485064
+    second: freePilkAbstractScribble_53
+  - first:
+      213: 2897885141591143711
+    second: freePilkAbstractScribble_54
+  - first:
+      213: -6176250506348604114
+    second: freePilkAbstractScribble_55
+  - first:
+      213: -4860750070712803950
+    second: freePilkAbstractScribble_56
+  - first:
+      213: -7464892927548028768
+    second: freePilkAbstractScribble_57
+  - first:
+      213: -4828642792041897912
+    second: freePilkAbstractScribble_58
+  - first:
+      213: 4495921947103926677
+    second: freePilkAbstractScribble_59
+  - first:
+      213: 7216513499540423162
+    second: freePilkAbstractScribble_60
+  - first:
+      213: -3692556412535379800
+    second: freePilkAbstractScribble_61
+  - first:
+      213: -3732514896755223291
+    second: freePilkAbstractScribble_62
+  - first:
+      213: -5533319703742793016
+    second: freePilkAbstractScribble_63
+  - first:
+      213: -8561074214981004823
+    second: freePilkAbstractScribble_64
+  - first:
+      213: -7023723612791408127
+    second: freePilkAbstractScribble_65
+  - first:
+      213: -4335520107048814155
+    second: freePilkAbstractScribble_66
+  - first:
+      213: 6576535241040910051
+    second: freePilkAbstractScribble_67
+  - first:
+      213: -8692660194958202703
+    second: freePilkAbstractScribble_68
+  - first:
+      213: -6649002996424419979
+    second: freePilkAbstractScribble_69
+  - first:
+      213: -8319651209663558945
+    second: freePilkAbstractScribble_70
+  - first:
+      213: 3191111575502624068
+    second: freePilkAbstractScribble_71
+  - first:
+      213: -4832217076586477658
+    second: freePilkAbstractScribble_72
+  - first:
+      213: -9040356896888268686
+    second: freePilkAbstractScribble_73
+  - first:
+      213: 8003931243418091989
+    second: freePilkAbstractScribble_74
+  - first:
+      213: 3448813963511862211
+    second: freePilkAbstractScribble_75
+  - first:
+      213: -7925588501214754480
+    second: freePilkAbstractScribble_76
+  - first:
+      213: 6678782393004528581
+    second: freePilkAbstractScribble_77
+  - first:
+      213: -877457511719929247
+    second: freePilkAbstractScribble_79
+  - first:
+      213: -1199127238104246745
+    second: freePilkAbstractScribble_80
+  - first:
+      213: 2181432981643609711
+    second: freePilkAbstractScribble_81
+  - first:
+      213: -5059383282301833873
+    second: freePilkAbstractScribble_82
+  - first:
+      213: 2993454853617645081
+    second: freePilkAbstractScribble_83
+  - first:
+      213: -7305955241370094211
+    second: freePilkAbstractScribble_84
+  - first:
+      213: -7109136427931403283
+    second: freePilkAbstractScribble_85
+  - first:
+      213: -998938181964690727
+    second: freePilkAbstractScribble_86
+  - first:
+      213: -7646236269508233164
+    second: freePilkAbstractScribble_87
+  - first:
+      213: 2851591139460228217
+    second: freePilkAbstractScribble_88
+  - first:
+      213: 8922940404544197402
+    second: freePilkAbstractScribble_89
+  - first:
+      213: -1338803655930138216
+    second: freePilkAbstractScribble_90
+  - first:
+      213: -1794304250700688192
+    second: freePilkAbstractScribble_91
+  - first:
+      213: -250983836083024195
+    second: freePilkAbstractScribble_92
+  - first:
+      213: -5319025241167129877
+    second: freePilkAbstractScribble_93
+  - first:
+      213: -1434244506129647341
+    second: freePilkAbstractScribble_94
+  - first:
+      213: -5922790984716767358
+    second: freePilkAbstractScribble_95
+  - first:
+      213: -3487448787860958426
+    second: freePilkAbstractScribble_96
+  - first:
+      213: -7461212275031214165
+    second: freePilkAbstractScribble_97
+  - first:
+      213: 1460372626374739823
+    second: freePilkAbstractScribble_98
+  - first:
+      213: -562453057184733586
+    second: freePilkAbstractScribble_99
+  - first:
+      213: -7593736068331975898
+    second: freePilkAbstractScribble_100
+  - first:
+      213: -2081120351465537883
+    second: freePilkAbstractScribble_101
+  - first:
+      213: -915498790047501533
+    second: freePilkAbstractScribble_102
+  - first:
+      213: -6990238372639197320
+    second: freePilkAbstractScribble_103
+  - first:
+      213: -3723097541237013331
+    second: freePilkAbstractScribble_104
+  - first:
+      213: 3803828597544214028
+    second: freePilkAbstractScribble_105
+  - first:
+      213: -5706175553773408606
+    second: freePilkAbstractScribble_106
+  - first:
+      213: -7341311610909917754
+    second: freePilkAbstractScribble_107
+  - first:
+      213: -7792807483320174976
+    second: freePilkAbstractScribble_108
+  - first:
+      213: 1818888972049710630
+    second: freePilkAbstractScribble_109
+  - first:
+      213: 5368440558739964687
+    second: freePilkAbstractScribble_110
+  - first:
+      213: 7656015393119290156
+    second: freePilkAbstractScribble_111
+  - first:
+      213: 9209292366247506647
+    second: freePilkAbstractScribble_112
+  - first:
+      213: 8164928980875305687
+    second: freePilkAbstractScribble_113
+  - first:
+      213: 8347952864543992272
+    second: freePilkAbstractScribble_114
+  - first:
+      213: 186826463034043777
+    second: freePilkAbstractScribble_115
+  - first:
+      213: -5659047177179902824
+    second: freePilkAbstractScribble_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 532
+        width: 102
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486b5a41a09c08050800000000000000
+      internalID: 5800857365186459268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 572
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a325a91a19f819ed0800000000000000
+      internalID: -2408986470022229446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_3
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 586
+        width: 112
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a06d74987d9d8e20800000000000000
+      internalID: 3354510438673768615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 587
+        width: 156
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c316ea703520597d0800000000000000
+      internalID: -2912419028390747844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_8
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 532
+        width: 68
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61cfd1cf7f92bb0800000000000000
+      internalID: -4960160852365011255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 577
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3dce529dd0cc8e0800000000000000
+      internalID: -1671946135365954584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_17
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 538
+        width: 104
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46f3eb6891d94800800000000000000
+      internalID: 597238878178637391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_25
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 401
+        width: 90
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1f6b7353b4ce370800000000000000
+      internalID: 8353134100805513684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_28
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 529
+        width: 97
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8740cc2da194f8d30800000000000000
+      internalID: 4435844537537791096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_33
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 401
+        width: 149
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59adc10e00316baa0800000000000000
+      internalID: -6145703747019548011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_38
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 388
+        width: 77
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6dd71fb8570ba60800000000000000
+      internalID: 7687773807833896662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_42
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 380
+        width: 102
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3041a5e4898d93dd0800000000000000
+      internalID: -2505733568993815549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_46
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 364
+        width: 76
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d452738dc4312d70800000000000000
+      internalID: 9016545986250691794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_47
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 398
+        width: 110
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45cf709c08abc270800000000000000
+      internalID: 8271889912513414475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_48
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 342
+        width: 78
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ed0382e9750ae50800000000000000
+      internalID: 6818546172629671506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_57
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 248
+        width: 77
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a88c2fde6f576890800000000000000
+      internalID: -7464892927548028768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_61
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 294
+        width: 100
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8ecbdb18761ccc0800000000000000
+      internalID: -3692556412535379800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_65
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 251
+        width: 158
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a7b036698b68e90800000000000000
+      internalID: -7023723612791408127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_69
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 291
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5755d9fa00ff9b3a0800000000000000
+      internalID: -6649002996424419979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_72
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 223
+        width: 127
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a78c78cb2480fcb0800000000000000
+      internalID: -4832217076586477658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_76
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 244
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0598c2def37a20290800000000000000
+      internalID: -7925588501214754480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_82
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 251
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d69d3e5b579c9b0800000000000000
+      internalID: -5059383282301833873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_86
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 159
+        width: 59
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da8b6f140f0322f0800000000000000
+      internalID: -998938181964690727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_88
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 186
+        width: 160
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974ad207803e29720800000000000000
+      internalID: 2851591139460228217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_94
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 17
+        width: 83
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319361b783a881ce0800000000000000
+      internalID: -1434244506129647341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_96
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 125
+        width: 144
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6235e230ec71a9fc0800000000000000
+      internalID: -3487448787860958426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_97
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 171
+        width: 89
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7faf097f2747890800000000000000
+      internalID: -7461212275031214165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_99
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 145
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66ebabace3c138f0800000000000000
+      internalID: -562453057184733586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_104
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 19
+        width: 133
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da400761386e45cc0800000000000000
+      internalID: -3723097541237013331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_105
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 14
+        width: 140
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e5817b4f9e9c430800000000000000
+      internalID: 3803828597544214028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_107
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 18
+        width: 130
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd734e5cfb6e1a90800000000000000
+      internalID: -7341311610909917754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_109
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 6
+        width: 135
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ef5e812edfd3910800000000000000
+      internalID: 1818888972049710630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_112
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 25
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d236ea3d9afdcf70800000000000000
+      internalID: 9209292366247506647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freePilkAbstractScribble_20
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 561
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cc30543960771b0800000000000000
+      internalID: -5659047177179902824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6e4bda1536d837c47b4d7edff241671b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private CharacterController characterCollider;
 
+    public bool gamePaused;
+
 
     [Header("Movement")]
     public bool canMove = false;
@@ -58,42 +60,64 @@ public class PlayerController : MonoBehaviour
 
     public void TouchMovement(float movementWeighting)   
     {
-  moveAxis = new Vector2(movementWeighting, 0);
-        lastMoveAxis = moveAxis.x;
+        //Runs touch script if the game isn't paused
+        if(gamePaused != true)
+        {
+            moveAxis = new Vector2(movementWeighting, 0);
+            lastMoveAxis = moveAxis.x;
+        }
+
 
 
     }
 
     public void CancelTouchMovement()
     {
-        moveAxis = new Vector2(0, 0);
+        //Runs movement script if the game isn't paused
+        if (gamePaused != true)
+        {
+            moveAxis = new Vector2(0, 0);
+        }
+      
 
     }
     // Update is called once per frame
     void FixedUpdate()
     {
-        Movement();
+        //Checks if the game is paused before doing update loop
+        if(gamePaused!=true)
+        {
+            Movement();
 
-        //This needs to be in fixed update for smoothness
-        MoveIntoHouse();
+            //This needs to be in fixed update for smoothness
+            MoveIntoHouse();
+        }
+       
     }
 
     public void Update()
     {
-        Raycast();
+        //Checks if the game is paused before running to save performance
+        if (gamePaused != true)
+        {
+            Raycast();
+        }
        
     }
 
     public void ChangeFacingDirection()
     {
- //If there is horizontal input 
-        if(moveAxis.x!=0)
+        //Checks if the game is paused before running
+        if (gamePaused != true)
         {
-            Vector3 movementDirection = new Vector3(0, 0, moveAxis.x);
+            //If there is horizontal input 
+            if (moveAxis.x != 0)
+            {
+                Vector3 movementDirection = new Vector3(0, 0, moveAxis.x);
 
-            playerHolder.transform.rotation = Quaternion.LookRotation(movementDirection);
+                playerHolder.transform.rotation = Quaternion.LookRotation(movementDirection);
+            }
         }
-
        
     }
 
@@ -126,17 +150,19 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Interactions(bool mouseUsed)
-    {
-        if(canMove)
+    { //Checks if the game is paused before running
+        if (gamePaused != true)
         {
-            //If the player is looking at an object with the dialogue trigger, do this.
-            if (dialogueTrigger != null)
+            if (canMove)
             {
-                dialogueTrigger.StartTextPopup(mouseUsed);
+                //If the player is looking at an object with the dialogue trigger, do this.
+                if (dialogueTrigger != null)
+                {
+                    dialogueTrigger.StartTextPopup(mouseUsed);
+                }
+
             }
-
         }
-
     }
 
     public void Movement()
