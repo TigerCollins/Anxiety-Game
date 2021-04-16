@@ -644,7 +644,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &85569139
 MeshRenderer:
@@ -3781,7 +3781,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &589884023
 MeshRenderer:
@@ -4588,7 +4588,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &640874579
 MeshRenderer:
@@ -5221,7 +5221,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &796746779
 MeshRenderer:
@@ -5449,7 +5449,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &832451881
 MeshRenderer:
@@ -6583,7 +6583,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &1053549516
 MeshRenderer:
@@ -6702,7 +6702,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &1073104534
 MeshRenderer:
@@ -6950,7 +6950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096111049}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -856.8, y: -349.2, z: 41.46}
+  m_LocalPosition: {x: -856.01, y: -349.17, z: 41.46}
   m_LocalScale: {x: 0.53530306, y: 0.53530306, z: 0.53530306}
   m_Children: []
   m_Father: {fileID: 433796142}
@@ -7489,8 +7489,8 @@ MonoBehaviour:
   targetObject: {fileID: 971588242}
   cameraDelay: 0.2
   xOffset: 0
-  yOffset: 3
-  zOffset: -8
+  yOffset: 3.25
+  zOffset: -8.12
 --- !u!114 &1176253669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7515,7 +7515,8 @@ MonoBehaviour:
   - Your outfit is so different
   - You look uncomfortable? You good?
   - I saw you looking at Jake, do you like him or something
-  partyDialogueTriggered: 000000000000000000
+  - hmmmm
+  partyDialogueTriggered: 00000000000000000000
   textPrefab: {fileID: 3880976259898618168, guid: d861ef3be190c8643a4118346678e40b, type: 3}
   debugTimesTriggered: 0
   canvasTransitionTime: 1
@@ -7534,6 +7535,8 @@ MonoBehaviour:
   spawnPointInt: 0
   spawnpointsCompleted: 0
   peopleSpokenTo: 0
+  maxTextCount: 20
+  currentTextCount: 0
 --- !u!114 &1176253670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7550,7 +7553,7 @@ MonoBehaviour:
   dialogueTransform: {fileID: 433796142}
   textTarget: {fileID: 971588243}
   cameraDelay: 0.35
-  xOffset: 855.7
+  xOffset: 855.1
   yOffset: 354.8
   zOffset: -44
 --- !u!114 &1176253671
@@ -7621,6 +7624,12 @@ MonoBehaviour:
   - {fileID: 1088044588}
   - {fileID: 1762363873}
   - {fileID: 1938331545}
+  - {fileID: 202661017}
+  - {fileID: 202661017}
+  - {fileID: 202661017}
+  - {fileID: 202661017}
+  - {fileID: 202661017}
+  - {fileID: 202661017}
   - {fileID: 202661017}
   redCanvasGroup: {fileID: 1759065413}
   timeBeforeShakeStart: 0
@@ -8823,7 +8832,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &1312439085
 MeshRenderer:
@@ -8942,7 +8951,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 7.4, z: 10}
+  m_Size: {x: 10, y: 12.71, z: 10}
   m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!23 &1323730311
 MeshRenderer:
@@ -10188,8 +10197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 3.12}
+  m_SizeDelta: {x: 100, y: 97.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559836232
 MonoBehaviour:
@@ -12352,8 +12361,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -298.5, y: -7.968872}
-  m_SizeDelta: {x: 596.9905, y: -80.062256}
+  m_AnchoredPosition: {x: -298.5, y: -0.052856445}
+  m_SizeDelta: {x: 596.9905, y: -0.10571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1861949940
 MonoBehaviour:

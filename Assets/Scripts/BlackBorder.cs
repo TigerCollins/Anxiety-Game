@@ -62,7 +62,7 @@ public class BlackBorder : MonoBehaviour
 
     IEnumerator BlackBorderTransition()
     {
-       
+        
         redCanvasGroup.alpha = 1;
         cameraBlock.SetActive(true);
         yield return new WaitForSeconds(redFlashTime);
@@ -71,11 +71,12 @@ public class BlackBorder : MonoBehaviour
         yield return new WaitForSeconds(timeBeforeShakeStart);
         StartCoroutine(traumaInducer.Start());
 
-        //If everyones been spoken to
-        if(peopleSpokenTo > blackBorderCanvasGroup.Length)
-        {
-            blackBorderCanvasGroup[peopleSpokenTo].alpha = 1;
+        //UpdatePeopleSpokenTo();
 
+        //If everyones been spoken to
+        if (peopleSpokenTo > blackBorderCanvasGroup.Length - 1)
+        {    
+            blackBorderCanvasGroup[peopleSpokenTo].alpha = 1;
             blackBorderCanvasGroup[peopleSpokenTo - 1].alpha = 0;
         }
 

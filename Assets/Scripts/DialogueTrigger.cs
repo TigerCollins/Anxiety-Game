@@ -43,9 +43,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (playerController.dialogueTrigger == null)
         {
-  
                 isSelected = false;
- 
         }
 
         else
@@ -72,8 +70,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void FixedUpdate()
     {
-   
-
         IconFader();
         UpdateIcons();
     }

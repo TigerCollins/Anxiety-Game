@@ -34,33 +34,68 @@ namespace TextPopup
 
         [Header("Spawnpoint Variables")]
         public int peopleSpokenTo;
+        [Tooltip("Sets the max amount of text objects spawnable. Set to -1 for infinite")]
+        public int maxTextCount;
+        [SerializeField]
+        private int currentTextCount;
 
 
         public void ChooseSpawn()
         {
-            if(spawnpointsCompleted <= partyDialogueTriggered.Count)
+            if (currentTextCount < maxTextCount)
             {
-                //Chooses a random spawn point when function is called
-                int potentialSpawn = Random.Range(0, partyDialogueTriggered.Count);
-
-                //Checks if the dialogue that may be called has already been called
-                if (partyDialogueTriggered[potentialSpawn] == false)
+                //Run the following code if the spawn points have all been ran through
+                if (spawnpointsCompleted < partyDialogueTriggered.Count)
                 {
-                    spawnPointInt = potentialSpawn;
+                    //Chooses a random spawn point when function is called
+                    int potentialSpawn = Random.Range(0, partyDialogueTriggered.Count);
+
+
+                    //Checks if the dialogue that may be called has already been called
+                    if (partyDialogueTriggered[potentialSpawn] == false)
+                    {
+                        spawnPointInt = potentialSpawn;
+                    }
+
+
+                    //If it's already been called, restart function
+                    else
+                    {
+                        ChooseSpawn();
+                    }
+
                 }
 
-                //If it's already been called, restart function
                 else
                 {
-                    ChooseSpawn();
+
+                    Debug.LogWarning("Already ran through all of the possible spawnpoints - Attempting Reset...");
+                    ResetDialogueCycle();
                 }
-
             }
-
-
 
         }
        
+        public void ResetDialogueCycle()
+        {
+
+            for (int i = 0; i < partyDialogueTriggered.Count; i++)
+            {
+              
+                partyDialogueTriggered[i] = false;
+            }
+            peopleSpokenTo = 0;
+          
+            spawnpointsCompleted = 0;
+            DebugTestAll();
+        }
+
+        void DebugTestAll()
+        {
+            Debug.Log("people spoken to: "+peopleSpokenTo);
+            Debug.Log("completed spawns: "+ spawnpointsCompleted);
+        }
+
         public void SpawnText(bool mouseUsed)
         {
             /*DUE TO A BUG WITH UNITY'S NEW INPUT SYSTEM, 
@@ -96,24 +131,43 @@ namespace TextPopup
         }
         private void SpawnTextPrefab()
         {
-            //Set spawn point
-            ChooseSpawn();
-
-            if (playerScript.dialogueTrigger != null)
+            //counts all of the spawned text
+            currentTextCount = 0;
+            foreach (Transform item in spawnpoint)
             {
-                //Chooses a spawnpoint from the list and instantiates the text prefab, the string is decided from the ID on the dialogue trigger
-                Instantiate(textPrefab, spawnpoint[spawnPointInt]);
-                partyDialogueTriggered[spawnPointInt] = true;
-                spawnpointsCompleted++;
+                for (int i = 0; i < item.transform.childCount; i++)
+                {
+                    currentTextCount++;
+                }
 
-                //Update the total amount of people spoken to
-                peopleSpokenTo++;
-                blackBorder.UpdatePeopleSpokenTo();
             }
 
+            //
+            if (currentTextCount < maxTextCount)
+            {
+                //Set spawn point
+                ChooseSpawn();
+
+                if (playerScript.dialogueTrigger != null)
+                {
+
+                    //Chooses a spawnpoint from the list and instantiates the text prefab, the string is decided from the ID on the dialogue trigger
+                    Instantiate(textPrefab, spawnpoint[spawnPointInt]);
+                    partyDialogueTriggered[spawnPointInt] = true;
+                    spawnpointsCompleted++;
+
+                    //Update the total amount of people spoken to
+                    peopleSpokenTo++;
 
 
+                    blackBorder.UpdatePeopleSpokenTo();
+                }
+
+            }
         }
+
+
+        
     }
 
 
